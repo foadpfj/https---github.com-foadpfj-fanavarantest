@@ -1,0 +1,115 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.banner{
+    width: 100%;
+    height: 100%;
+    padding: 0 10px 0 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f3f3f3;
+    color: #FFFFFF;
+}
+
+.banner_container{
+    width: 1320px;
+    min-height: 450px;
+    margin-left: 5px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    border-radius: 1rem;
+    display: flex;
+    justify-content: center;
+    /* background: linear-gradient(#e66465, #9198e5); */
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+
+
+.banner_container_parts{
+    width: 100%;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media screen and (max-width: 570px) {
+    .banner_container_parts {
+        flex-direction: column-reverse;
+    }
+}
+
+
+.banner_container_parts_left{
+    min-width: 40%;
+    display: flex;
+    justify-content: center;
+}
+
+.banner_container_parts_right{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 18px;
+    min-width: 40%;
+    max-width: 400px;
+}
+@media screen and (max-width: 770px) {
+    .banner_container_parts_right {
+        min-width: auto;
+    }
+}
+@media screen and (max-width: 570px) {
+    .banner_container_parts_right {
+        align-items: center;
+    }
+}
+
+.banner_container_parts_right_h4{
+    color: #FAFFC9;
+}
+
+.banner_container_parts_right_box{
+    width: max-content;
+    padding: 13px 30px;
+    border-radius: 1rem;
+    border: 1px solid #3f3f3f;
+    line-height: 1;
+    gap: 8px;
+    color: #FFFFFF;
+    border-color: #FFFFFF;
+}
+.banner_container_parts_right_box:hover{
+    background-color: #010152;
+}
+
+.banner_container_parts_right_box_link_details{
+    display: flex;
+    flex-direction: row-reverse;
+    gap: .5rem;
+}
+
+
+.banner_container_parts_right_link_details_text{
+    font-size: 13px;
+    
+}
